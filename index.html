@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Estilo -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <div class="container fundo">
+        <div class="row">
+            <div class="offset-md-4"></div>
+            <div class="col col-md-4 visor">
+                <span>0</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-md-4"></div>
+            <div class="col col-md-1 border bg-warning operador">
+                <button class="btn btn-block" id="limpa-tudo">AC</button>
+            </div>
+            <div class="col col-md-1 border bg-secondary operador">
+                <button class="btn btn-block" id="divisao">&divide;</button>
+            </div>
+            <div class="col col-md-1 border bg-secondary operador">
+                <button class="btn btn-block" id="multiplicacao">&times;</button>
+            </div>
+            <div class="col col-md-1 border bg-danger operador">
+                <button class="btn btn-block" id="limpa-ultimo">&#9421;</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-md-4"></div>
+            <div class="col col-md-1 border bg-dark numero">
+                <button class="btn btn-block num" id="7">7</button>
+            </div>
+            <div class="col col-md-1 border bg-dark numero">
+                <button class="btn btn-block num" id="8">8</button>
+            </div>
+            <div class="col col-md-1 border bg-dark numero">
+                <button class="btn btn-block num" id="9">9</button>
+            </div>
+            <div class="col col-md-1 border bg-secondary operador">
+                <button class="btn btn-block" id="modulo">&#37;</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-md-4"></div>
+            <div class="col col-md-1 border bg-dark numero">
+                <button class="btn btn-block num" id="4">4</button>  
+            </div>
+            <div class="col col-md-1 border bg-dark numero">
+                <button class="btn btn-block num" id="5">5</button>
+            </div>
+            <div class="col col-md-1 border bg-dark numero">
+                <button class="btn btn-block num" id="6">6</button>
+            </div>
+            <div class="col col-md-1 border bg-secondary operador">
+                <button class="btn btn-block" id="subtracao">&minus;</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-md-4"></div>
+            <div class="col col-md-1 border bg-dark numero">
+                <button class="btn btn-block num" id="1">1</button>
+            </div>
+            <div class="col col-md-1 border bg-dark numero">
+                <button class="btn btn-block num" id="2">2</button>
+            </div>
+            <div class="col col-md-1 border bg-dark numero">
+                <button class="btn btn-block num" id="3">3</button>
+            </div>
+            <div class="col col-md-1 border bg-secondary operador">
+                <button class="btn btn-block" id="adicao">&plus;</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="offset-md-4"></div>
+            <div class="col col-md-1 border bg-dark numero">
+                <button class="btn btn-block num" id="0">0</button>
+            </div>
+            <div class="col col-md-1 border bg-secondary operador">
+                <button class="btn btn-block" id="ponto">&sdot;</button>
+            </div>
+            <div class="col col-md-1 border bg-secondary operador">
+                <button class="btn btn-block" id="parentese">&#40; &#41;</button>
+            </div>
+            <div class="col col-md-1 border bg-success operador">
+                <button class="btn btn-block" id="igual">&#61;</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        var numeros = document.querySelectorAll('.num');
+
+        console.log(numeros[9].innerHTML)
+    </script>
+</body>
+
+</html>
