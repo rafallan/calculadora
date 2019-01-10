@@ -20,87 +20,87 @@
         <div class="row">
             <div class="offset-md-2 offset-lg-4"></div>
             <div class="col col-md-8 border col-lg-4 visor">
-                <span>0</span>
+                <span id='visor'>0</span>
             </div>
         </div>
 
         <div class="row">
             <div class="offset-md-2 offset-lg-4"></div>
             <div class="col col-md-2 col-lg-1 border bg-warning operador">
-                <button class="btn btn-block" id="limpa-tudo">AC</button>
+                <button class="btn btn-block" id="limpa-tudo" onclick="limpa_visor();">AC</button>
             </div>
             <div class="col col-md-2 col-lg-1 border bg-secondary operador">
-                <button class="btn btn-block" id="divisao">&divide;</button>
+                <button class="btn btn-block" id="divisao" onclick="botao('/');">&divide;</button>
             </div>
             <div class="col col-md-2 col-lg-1 border bg-secondary operador">
-                <button class="btn btn-block" id="multiplicacao">&times;</button>
+                <button class="btn btn-block" id="multiplicacao" onclick="botao('*');">&times;</button>
             </div>
             <div class="col col-md-2 col-lg-1 border bg-danger operador">
-                <button class="btn btn-block" id="limpa-ultimo"><i class="fas fa-backspace"></i></button>
+                <button class="btn btn-block" id="limpa-ultimo" onclick='apaga_caracter();'><i class="fas fa-backspace"></i></button>
             </div>
         </div>
 
         <div class="row">
             <div class="offset-md-2 offset-lg-4"></div>
             <div class="col col-md-2 col-lg-1 border bg-dark numero">
-                <button class="btn btn-block num" id="7">7</button>
+                <button class="btn btn-block num" id="7" onclick="botao(7);">7</button>
             </div>
             <div class="col col-md-2 col-lg-1 border bg-dark numero">
-                <button class="btn btn-block num" id="8">8</button>
+                <button class="btn btn-block num" id="8" onclick="botao(8);">8</button>
             </div>
             <div class="col col-md-2 col-lg-1 border bg-dark numero">
-                <button class="btn btn-block num" id="9">9</button>
+                <button class="btn btn-block num" id="9" onclick="botao(9);">9</button>
             </div>
             <div class="col col-md-2 col-lg-1 border bg-secondary operador">
-                <button class="btn btn-block" id="modulo">&#37;</button>
+                <button class="btn btn-block" id="modulo" onclick="porcentagem();">&#37;</button>
             </div>
         </div>
 
         <div class="row">
             <div class="offset-md-2 offset-lg-4"></div>
             <div class="col col-md-2 col-lg-1 border bg-dark numero">
-                <button class="btn btn-block num" id="4">4</button>  
+                <button class="btn btn-block num" id="4" onclick="botao(4);">4</button>  
             </div>
             <div class="col col-md-2 col-lg-1 border bg-dark numero">
-                <button class="btn btn-block num" id="5">5</button>
+                <button class="btn btn-block num" id="5" onclick="botao(5);">5</button>
             </div>
             <div class="col col-md-2 col-lg-1 border bg-dark numero">
-                <button class="btn btn-block num" id="6">6</button>
+                <button class="btn btn-block num" id="6" onclick="botao(6);">6</button>
             </div>
             <div class="col col-md-2 col-lg-1 border bg-secondary operador">
-                <button class="btn btn-block" id="subtracao">&minus;</button>
+                <button class="btn btn-block" id="subtracao" onclick="botao('-');">&minus;</button>
             </div>
         </div>
 
         <div class="row">
             <div class="offset-md-2 offset-lg-4"></div>
             <div class="col col-md-2 col-lg-1 border bg-dark numero">
-                <button class="btn btn-block num" id="1">1</button>
+                <button class="btn btn-block num" id="1" onclick="botao(1);">1</button>
             </div>
             <div class="col col-md-2 col-lg-1 border bg-dark numero">
-                <button class="btn btn-block num" id="2">2</button>
+                <button class="btn btn-block num" id="2" onclick="botao(2);">2</button>
             </div>
             <div class="col col-md-2 col-lg-1 border bg-dark numero">
-                <button class="btn btn-block num" id="3">3</button>
+                <button class="btn btn-block num" id="3" onclick="botao(3);">3</button>
             </div>
             <div class="col col-md-2 col-lg-1 border bg-secondary operador">
-                <button class="btn btn-block" id="adicao">&plus;</button>
+                <button class="btn btn-block" id="adicao" onclick="botao('+');">&plus;</button>
             </div>
         </div>
         <div class="row">
             
             <div class="offset-md-2 offset-lg-4"></div>
             <div class="col col-md-2 col-lg-1 border bg-dark numero">
-                <button class="btn btn-block num" id="0">0</button>
+                <button class="btn btn-block num" id="0" onclick="botao(0);">0</button>
             </div>
             <div class="col col-md-2 col-lg-1 border bg-secondary operador">
-                <button class="btn btn-block" id="ponto">&sdot;</button>
+                <button class="btn btn-block" id="ponto" onclick="botao('.');">&sdot;</button>
             </div>
             <div class="col col-md-2 col-lg-1 border bg-secondary operador">
-                <button class="btn btn-block" id="parentese">&#40; &#41;</button>
+                <button class="btn btn-block" id="parentese" onclick="botao('parentesis');">&#40; &#41;</button>
             </div>
             <div class="col col-md-2 col-lg-1 border bg-success operador">
-                <button class="btn btn-block" id="igual">&#61;</button>
+                <button class="btn btn-block" id="igual" onclick="calcular();">&#61;</button>
             </div>
         </div>
 
@@ -109,12 +109,12 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <script>
-        var numeros = document.querySelectorAll('.num');
-
-        console.log(numeros[7].innerHTML)
+        //var numeros = document.querySelectorAll('.num');
+        //console.log(numeros[7].innerHTML)
     </script>
 </body>
 
